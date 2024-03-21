@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-public class Cache<K, V> {
+public class Utils<K, V> {
     private Map<K, V> cache = new WeakHashMap<>();
 
     public V getByKey(K key, Class<V> clazz) throws Exception {

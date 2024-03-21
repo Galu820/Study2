@@ -3,6 +3,7 @@ package org.example;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 public class LoadableInvHandler implements InvocationHandler
 {
@@ -14,10 +15,9 @@ public class LoadableInvHandler implements InvocationHandler
         Method m = obj.getClass().getMethod(method.getName(), method.getParameterTypes());
 
         //Annotation[] anns = m.getDeclaredAnnotations();
-        Annotation[] anns = m.getAnnotationsByType(Mutator.class);
-        for (Annotation a: anns)
+        if(Arrays.stream(m.getAnnotationsByType(Cachable.class)).count()>0)
         {
-            Utils.Cache(obj, m);
+            int c = new Utils(obj);
         }
 
         return method.invoke(obj, args);

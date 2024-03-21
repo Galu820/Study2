@@ -14,7 +14,14 @@ public class Main {
         System.out.println(Arrays.toString(accClass.getDeclaredFields()));
 
         Fraction fr = new Fraction(3,2);
-        Fractionable num;
-        num = Utils.Cache(fr);
+        fr.setNum(4);
+        System.out.println(fr.doubleValue());
+        Fractionable num = new Utils(fr);
+        num.doubleValue();// sout сработал
+        num.doubleValue();// sout молчит
+        num.doubleValue();// sout молчит
+        num.setNum(5);
+        num.doubleValue();// sout сработал
+        num.doubleValue();// sout молчит
     }
 }
