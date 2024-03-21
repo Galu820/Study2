@@ -17,9 +17,14 @@ public class LoadableInvHandler implements InvocationHandler
         //Annotation[] anns = m.getDeclaredAnnotations();
         if(Arrays.stream(m.getAnnotationsByType(Cachable.class)).count()>0)
         {
-            int c = new Utils(obj);
+        //    Utils<obj, obj.getClass()> cache = new Utils<>();
+        //    cache.put(obj.getClass());
+            System.out.println("proxy = " + proxy + ", method = " + method + ", args = " + Arrays.toString(args));
         }
-
+        //    Utils<obj, obj.getClass()> cache = new Utils<>();
+        //    cache.getByKey(obj.getClass());
+        if(Arrays.stream(m.getAnnotationsByType(Mutator.class)).count()>0)
+            System.out.println("proxy = " + proxy + ", method = " + method + ", args = " + Arrays.toString(args));
         return method.invoke(obj, args);
 
     }

@@ -5,9 +5,6 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws NothingToUndo {
 
-        System.out.println("******************");
-        System.out.println("Hello and welcome!");
-
         Account acc = new Account("Иван Иванов");
 
         Class accClass = acc.getClass();
