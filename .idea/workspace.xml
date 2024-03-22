@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab63eadf-cdff-461b-acc9-436a9cde0cbf" name="Changes" comment="Study2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UtilFractionAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Fraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoadableInvHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoadableInvHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
@@ -94,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711057366734</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Study2">
+      <option name="closed" value="true" />
+      <created>1711129151485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711129151485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

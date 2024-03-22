@@ -1,6 +1,14 @@
 package org.example;
 
+import java.lang.reflect.Proxy;
+
 public class Fraction implements Fractionable {
+    public Object getProxy() {
+        Class cls = this.getClass();
+        return Proxy.newProxyInstance(cls.getClassLoader(),
+                new Class[]{Loadable.class, Fractionable.class},
+                new LoadableInvHandler(this));
+    }
     private int num;
     private int denum;
     public Fraction(int num, int denum) {
